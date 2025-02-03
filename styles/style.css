@@ -1,0 +1,112 @@
+html {
+  scroll-behavior: smooth;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+#home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#home video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+#home .container {
+  position: relative;
+  z-index: 1;
+}
+.card_hover {
+  transition: box-shadow 200ms;
+}
+
+.card_hover:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.center_Me {
+  display: inline;
+  margin: 0 auto;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: yellow !important; /* Yellow on hover */
+}
+
+/* Active link styling */
+.nav-link.active {
+  color: yellow !important; /* Yellow for active link */
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600; /* Set weight to 600 */
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(224, 7, 7) !important;
+}
+
+.navbar {
+  -webkit-box-shadow: 0px 14px 46px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 46px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 14px 46px -16px rgba(0, 0, 0, 0.75);
+}
+
+.hover-popup {
+  transition: all 100ms;
+}
+.hover-popup:hover {
+  transform: scale(1.03);
+}
+
+/* Footer Style */
+
+.dev-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 0;
+  gap: 0;
+  align-self: center;
+}
