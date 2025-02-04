@@ -110,3 +110,20 @@ html {
   gap: 0;
   align-self: center;
 }
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+}
+
+.hero-btn a {
+  width: 100%;
+}
+
+@media (max-width: 422px) {
+  .hero-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
