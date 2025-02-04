@@ -116,14 +116,13 @@ html {
   align-items: center;
 }
 
-.hero-btn a {
-  width: 100%;
-}
-
 @media (max-width: 422px) {
   .hero-btn {
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+  .hero-btn a {
+    width: 100%;
   }
 }
